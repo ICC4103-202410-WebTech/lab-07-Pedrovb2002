@@ -10,8 +10,8 @@ class Post < ApplicationRecord
     validates :title, presence: { message: "¡El título no puede estar vacío!" }
     validates :content, presence: { message: "¡El contenido no puede estar vacío!" }
     validates :user_id, presence: { message: "¡El ID del usuario no puede estar vacío!" }
-    validates :answers_count, numericality: { greater_than_or_equal_to: 0, message: "¡El conteo de respuestas debe ser mayor o igual a 0!" } }
-    validates :likes_count, numericality: { greater_than_or_equal_to: 0, message: "¡El conteo de likes debe ser mayor o igual a 0!" } }
+    validates :answers_count, numericality: { greater_than_or_equal_to: 0, message: "¡El conteo de respuestas debe ser mayor o igual a 0!" } 
+    validates :likes_count, numericality: { greater_than_or_equal_to: 0, message: "¡El conteo de likes debe ser mayor o igual a 0!" } 
   
     before_validation :set_published_at
 
